@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sagrampura Pigeon</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+        PAGE LOADER
+============================ -->
+
+<div id="loader">
+    <div class="spinner-border text-warning"></div>
+</div>
+
+<!-- ===========================
+        NAVBAR
+============================ -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="fa-solid fa-dove"></i> Sagrampura Pigeon
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+
+                <li class="nav-item">
+
+                    <button id="themeBtn"
+                            class="btn btn-outline-light">
+
+                        🌙
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ===========================
+        HERO SLIDER
+============================ -->
+
+<section id="home">
+
+<div id="heroSlider"
+     class="carousel slide carousel-fade"
+     data-bs-ride="carousel">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+
+<img src="images/Banner2.png"
+     class="d-block w-100"
+     alt="Banner 1">
+
+<div class="carousel-caption">
+
+
+
+<a href="#products"
+   class="btn btn-warning btn-lg">
+
+Shop Now
+
+</a>
+
+</div>
+
+</div>
+
+<div class="carousel-item">
+
+<img src="images/ProductsBanner1.png"
+     class="d-block w-100"
+     alt="Banner 2">
+
+</div>
+
+
+</div>
+
+<button class="carousel-control-prev"
+        data-bs-target="#heroSlider"
+        data-bs-slide="prev">
+
+<span class="carousel-control-prev-icon"></span>
+
+</button>
+
+<button class="carousel-control-next"
+        data-bs-target="#heroSlider"
+        data-bs-slide="next">
+
+<span class="carousel-control-next-icon"></span>
+
+</button>
+
+</div>
+
+</section>
+
+<!-- NEXT PART:
+Products Section Starts Here -->
+
+<!-- =========================================
+        PRODUCTS SECTION
+========================================= -->
+
+<section id="products" class="container py-5">
+
+<div class="text-center mb-5">
+
+<h2 class="fw-bold">Our Products</h2>
+
+<p class="text-muted">
+
+Premium supplements for breeding and healthy pigeons.
+
+</p>
+
+</div>
+
+<!-- Search + Sort -->
+
+<div class="row mb-4">
+
+<div class="col-md-6 mb-3">
+
+<input
+type="text"
+id="searchInput"
+class="form-control form-control-lg"
+placeholder="Search Products...">
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<select
+id="sortProducts"
+class="form-select form-select-lg">
+
+<option value="">Sort Products</option>
+
+<option value="low">
+
+Price : Low to High
+
+</option>
+
+<option value="high">
+
+Price : High to Low
+
+</option>
+
+<option value="name">
+
+A - Z
+
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="row g-4" id="productContainer">
+
+<!-- 1 -->
+<div 
+class="col-lg-4 col-md-6 product"
+data-name="4in1"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/4in1.png"
+class="card-img-top"
+alt="4in1">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>4in1 | 100 gm powder</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="4in1"
+
+data-price=""
+
+data-img="images/Products/4in1.png"
+
+data-desc="<b>Use : </b>For the treatment and prevention of trichomoniasis and hexamithiasis. <br> <br> <b>Dosage :</b> Drinking water – 5 grams per 2 liters of water or by food – 5 grams in food for 40 pigeons, for 5-7 days for treatment, and 3 grams in food for 40 pigeons for 5-7 days for prevention. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 2 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="8in1"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/8in1.png"
+class="card-img-top"
+alt="8in1">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>8in1 | 50 Tablets</h4>
+<!-- 
+<p>
+
+Specially formulated external skin cream for pigeon pox sores.
+
+</p> -->
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="8in1"
+
+data-price=""
+
+data-img="images/Products/8in1.png"
+
+data-desc="<b>Use : </b> For the treatment of infections ear and wound infections, colibacteriosis, psychatoses, bacterial infections etc.It also acts on other protozoan diseases with the following symptoms: increased amount of saliva in the throat, adhesions in the throat, green diarrhea, vomiting, increased thirst, weight loss, dehydration, death of young pigeons in the nest. <br><br> <b>Dosage :</b> Directly and individually for each animal in a dose of 1 tablet per head in the morning and evening for 5-7 days. In the absence of clinical improvement within 2-3 days, antimicrobial therapy should be reviewed based on susceptibility testing. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 3 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="8in1-mix"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/8in1-mix.png"
+class="card-img-top"
+alt="8in1-mix">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>8in1 Mix | 100 gm</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="8in1-mix"
+
+data-price=""
+
+data-img="images/Products/8in1-mix.png"
+
+data-desc="<b>Use : </b> For the treatment of infections ear and wound infections, colibacteriosis, psychatoses, bacterial infections etc.It also acts on other protozoan diseases with the following symptoms: increased amount of saliva in the throat, adhesions in the throat, green diarrhea, vomiting, increased thirst, weight loss, dehydration, death of young pigeons in the nest. <br><br> <b>Dosage :</b> drinking water – 5 grams per 2 litres of water or by food – 5 grams in food for 40 pigeons, for 5-7 days for treatment, and 3 grams in food for 40 pigeons for 5-7 days for prevention. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 4 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="aminovitae-boost"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/aminovitae-boost.png"
+class="card-img-top"
+alt="aminovitae-boost">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Aminovitae Boost | 500 ml</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="aminovitae-boost"
+
+data-price=""
+
+data-img="images/Products/aminovitae-boost.png"
+
+data-desc="<b>Use : </b> FOR INCREASED MUSCLE STRENGTH, BREEDING YOUNGSTERS, AND DURING THE MOLTING SEASON
+AMINOVITAE BOOST is very effective product for racing pigeons that contains a concentrate of amino acids. It is ready to use, works fast and is easy to digest.
+It delivers the necessary energy, contributes to a faster absorption of amino acids and also contains vitamin B, which is critical in the maximal absorption of the amino acids.
+It is composed of all essential and many non-essential amino acids coming from high-quality proteins. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 5 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="aminovitae-pro-boost"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/aminovitae-pro-boost.png"
+class="card-img-top"
+alt="aminovitae-pro-boost">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Aminovitae Pro Boost | 1 kg</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="aminovitae-pro-boost"
+
+data-price=""
+
+data-img="images/Products/aminovitae-pro-boost.png"
+
+data-desc="<b>Use : </b> Perfectly tailored to the needs of pigeons and promotes fitness until the day of the flight.
+The prebiotics in the preparation stabilize the intestinal flora and thus improve intestinal health. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 6 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="bcolvit"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/bcolvit.png"
+class="card-img-top"
+alt="bcolvit">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>B-COLVIT | 500 ml</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="bcolvit"
+
+data-price=""
+
+data-img="images/Products/bcolvit.png"
+
+data-desc="<b>Use : </b> For multivitamin nutritional preparation formulated to support the general condition, health, and recovery of pigeons. It provides essential vitamins and nutrients that can be included in a regular pigeon-care program, particularly during periods of training, breeding, recovery, stress, or illness. <br><br> <b>Dosage :</b> Mix 30 ml of B-COLVIT per litre of drinking water, according to the product label.
+Prepare fresh solution daily. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- </div> -->
+
+<div class="text-center mt-5">
+
+        <a href="products.html"
+           class="btn btn-warning btn-lg px-5">
+
+            View All Products
+            <i class="fas fa-arrow-right ms-2"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+NEXT PART (1C)
+
+✔ About
+✔ Animated Statistics
+✔ Why Choose Us
+✔ Gallery
+✔ Lightbox
+
+========================== -->
+
+<!-- =========================================
+            ABOUT SECTION
+========================================= -->
+
+<section id="about" class="about">
+
+<div class="container">
+
+<div class="text-center">
+
+<h2 class="fw-bold">
+
+Why Choose Pigeon Pro?
+
+</h2>
+
+<p class="text-muted">
+
+Trusted by professional pigeon breeders worldwide.
+
+</p>
+
+</div>
+
+<div class="row mt-5 text-center">
+
+<div class="col-lg-6">
+
+<i class="fas fa-leaf fa-4x text-success mb-3"></i>
+
+<h3>Natural Ingredients</h3>
+
+<p>
+
+Premium quality herbs, vitamins and minerals.
+
+</p>
+
+</div>
+
+<div class="col-lg-6">
+
+<i class="fas fa-truck-fast fa-4x text-warning mb-3"></i>
+
+<h3>Fast Delivery</h3>
+
+<p>
+
+PAN india shipping with secure packaging.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            STATISTICS
+========================================= -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-md-6">
+
+<h1 class="counter" data-target="500">
+
+0
+
+</h1>
+
+<p>
+
+Customers
+
+</p>
+
+</div>
+
+<div class="col-md-6">
+
+<h1 class="counter" data-target="250">
+
+0
+
+</h1>
+
+<p>
+
+Products
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+                GALLERY
+========================================= -->
+
+<section
+id="gallery"
+class="container py-5">
+
+<div class="text-center mb-5">
+
+<h2 class="fw-bold">
+
+Gallery
+
+</h2>
+
+<p class="text-muted">
+
+Champion pigeons using our supplements.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4 col-md-6">
+
+<img
+src="D:\SagrampuraPegionsApp\sp\images\Cover1.jpg"
+class="gallery img-fluid rounded">
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<img
+src="D:\SagrampuraPegionsApp\sp\images\Cover2.jpg"
+class="gallery img-fluid rounded">
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<img
+src="D:\SagrampuraPegionsApp\sp\images\Cover3.jpg"
+class="gallery img-fluid rounded">
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<img
+src="D:\SagrampuraPegionsApp\sp\images\Cover4.jpg"
+class="gallery img-fluid rounded">
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<img
+src="D:\SagrampuraPegionsApp\sp\images\img.jpg"
+class="gallery img-fluid rounded">
+
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<img
+src="D:\SagrampuraPegionsApp\sp\images\Cover5.jpg"
+class="gallery img-fluid rounded">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            LIGHTBOX
+========================================= -->
+
+<div id="lightbox">
+
+<span id="close">
+
+&times;
+
+</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<!-- =========================================
+            CUSTOMER REVIEWS
+========================================= -->
+
+<section id="reviews" class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="fw-bold">
+
+Customer Reviews
+
+</h2>
+
+<p class="text-muted">
+
+What our customers say
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="review">
+
+★★★★★
+
+<p>
+
+"My racing pigeons became stronger within weeks."
+
+</p>
+
+<h5>- Ahmed Khan</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="review">
+
+★★★★★
+
+<p>
+
+"Excellent quality supplements."
+
+</p>
+
+<h5>- Ashraf Shaikh</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="review">
+
+★★★★★
+
+<p>
+
+"Highly recommended for breeders."
+
+</p>
+
+<h5>- Waqar</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            CONTACT
+========================================= -->
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2>
+
+Contact Us
+
+</h2>
+
+<p>
+
+We're always happy to help.
+
+</p>
+
+</div>
+
+<div class="row">
+
+<div class="col-lg-6">
+
+<form>
+
+<input
+type="text"
+class="form-control mb-3"
+placeholder="Full Name">
+
+<input
+type="email"
+class="form-control mb-3"
+placeholder="Email">
+
+<input
+type="text"
+class="form-control mb-3"
+placeholder="Phone Number">
+
+<textarea
+rows="6"
+class="form-control mb-3"
+placeholder="Your Message"></textarea>
+
+<button
+class="btn btn-warning w-100">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+<div class="col-lg-6">
+
+<iframe
+
+src="https://maps.google.com/maps?q=21.1877914,72.8223015&z=17&output=embed"
+
+width="100%"
+
+height="450"
+
+style="border:0; border-radius:15px;"
+
+loading="lazy">
+
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            Read More MODAL
+========================================= -->
+
+<div
+class="modal fade"
+id="quickModal"
+tabindex="-1">
+
+<div class="modal-dialog modal-lg">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h4 id="modalTitle">
+
+Product
+
+</h4>
+
+<button
+class="btn-close"
+data-bs-dismiss="modal">
+
+</button>
+
+</div>
+
+<div class="modal-body">
+
+<div class="row">
+
+<div class="col-md-6">
+
+<img
+id="modalImage"
+class="img-fluid rounded">
+
+</div>
+
+<div class="col-md-6">
+
+<h3 id="modalPrice"></h3>
+
+<p id="modalDesc"></p>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =========================================
+            WHATSAPP BUTTON
+========================================= -->
+
+<a
+
+href="https://wa.me/917016909435?text=Hello%20I%20want%20to%20order%20suppliments"
+
+class="whatsapp-float"
+
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- =========================================
+            BACK TO TOP
+========================================= -->
+
+<button id="topBtn">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- =========================================
+            FOOTER
+========================================= -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="row gy-4">
+
+<div class="col-lg-4">
+
+<h3>
+
+<i class="fas fa-dove"></i>
+
+Sagrampura Pigeon
+
+</h3>
+
+<p>
+
+Premium pigeon supplements for breeding and healthy birds.
+
+</p>
+
+</div>
+
+<div class="col-lg-2">
+
+<h5>
+
+Quick Links
+
+</h5>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-3">
+
+<h5>
+
+Contact
+
+</h5>
+
+<p>
+
+<i class="fas fa-phone"></i>
+
++91 7016909435
+
+</p>
+
+<p>
+
+<i class="fas fa-envelope"></i>
+
+sonihassan98@gmail.com
+
+</p>
+
+<p>
+
+<i class="fas fa-location-dot"></i>
+
+Surat, Gujarat
+
+</p>
+
+</div>
+
+<div class="col-lg-3">
+
+<h5>
+
+Follow Us
+
+</h5>
+
+<div class="social">
+
+<a href="https://www.instagram.com/surat_sagrampura_pigeons/"><i class="fab fa-instagram"></i></a>
+
+<a href="https://www.youtube.com/@SagrampuraPigeons"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+<h5 class="mt-4">
+
+Payments
+
+</h5>
+
+<i class="fab fa-google-pay payment"></i>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="text-center">
+
+© 2026 Sagrampura Pigeon. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

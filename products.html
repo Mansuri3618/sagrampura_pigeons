@@ -1,0 +1,2165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sagrampura Pigeon</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+        PAGE LOADER
+============================ -->
+
+<div id="loader">
+    <div class="spinner-border text-warning"></div>
+</div>
+
+<!-- ===========================
+        NAVBAR
+============================ -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="fa-solid fa-dove"></i> Sagrampura Pigeon
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#products" class="nav-link">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#gallery" class="nav-link">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#reviews" class="nav-link">Reviews</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+
+                <li class="nav-item">
+
+                    <button id="themeBtn"
+                            class="btn btn-outline-light">
+
+                        🌙
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- =========================================
+        PRODUCTS SECTION
+========================================= -->
+
+<section id="products" class="container py-5">
+
+<div class="text-center mb-5">
+
+<h2 class="fw-bold">Our Products</h2>
+
+<p class="text-muted">
+
+Premium supplements for breeding and healthy pigeons.
+
+</p>
+
+</div>
+
+<!-- Search + Sort -->
+
+<div class="row mb-4">
+
+<div class="col-md-6 mb-3">
+
+<input
+type="text"
+id="searchInput"
+class="form-control form-control-lg"
+placeholder="Search Products...">
+
+</div>
+
+<div class="col-md-6 mb-3">
+
+<select
+id="sortProducts"
+class="form-select form-select-lg">
+
+<option value="">Sort Products</option>
+
+<option value="low">
+
+Price : Low to High
+
+</option>
+
+<option value="high">
+
+Price : High to Low
+
+</option>
+
+<option value="name">
+
+A - Z
+
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="row g-4" id="productContainer">
+
+<!-- 1 -->
+<div 
+class="col-lg-4 col-md-6 product"
+data-name="4in1"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/4in1.png"
+class="card-img-top"
+alt="4in1">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>4in1 | 100 gm powder</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="4in1"
+
+data-price=""
+
+data-img="images/Products/4in1.png"
+
+data-desc="<b>Use : </b>For the treatment and prevention of trichomoniasis and hexamithiasis. <br> <br> <b>Dosage :</b> Drinking water – 5 grams per 2 liters of water or by food – 5 grams in food for 40 pigeons, for 5-7 days for treatment, and 3 grams in food for 40 pigeons for 5-7 days for prevention. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 2 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="8in1"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/8in1.png"
+class="card-img-top"
+alt="8in1">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>8in1 | 50 Tablets</h4>
+<!-- 
+<p>
+
+Specially formulated external skin cream for pigeon pox sores.
+
+</p> -->
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="8in1"
+
+data-price=""
+
+data-img="images/Products/8in1.png"
+
+data-desc="<b>Use : </b> For the treatment of infections ear and wound infections, colibacteriosis, psychatoses, bacterial infections etc.It also acts on other protozoan diseases with the following symptoms: increased amount of saliva in the throat, adhesions in the throat, green diarrhea, vomiting, increased thirst, weight loss, dehydration, death of young pigeons in the nest. <br><br> <b>Dosage :</b> Directly and individually for each animal in a dose of 1 tablet per head in the morning and evening for 5-7 days. In the absence of clinical improvement within 2-3 days, antimicrobial therapy should be reviewed based on susceptibility testing. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 3 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="8in1-mix"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/8in1-mix.png"
+class="card-img-top"
+alt="8in1-mix">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>8in1 Mix | 100 gm</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="8in1-mix"
+
+data-price=""
+
+data-img="images/Products/8in1-mix.png"
+
+data-desc="<b>Use : </b> For the treatment of infections ear and wound infections, colibacteriosis, psychatoses, bacterial infections etc.It also acts on other protozoan diseases with the following symptoms: increased amount of saliva in the throat, adhesions in the throat, green diarrhea, vomiting, increased thirst, weight loss, dehydration, death of young pigeons in the nest. <br><br> <b>Dosage :</b> drinking water – 5 grams per 2 litres of water or by food – 5 grams in food for 40 pigeons, for 5-7 days for treatment, and 3 grams in food for 40 pigeons for 5-7 days for prevention. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 4 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="aminovitae-boost"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/aminovitae-boost.png"
+class="card-img-top"
+alt="aminovitae-boost">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Aminovitae Boost | 500 ml</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="aminovitae-boost"
+
+data-price=""
+
+data-img="images/Products/aminovitae-boost.png"
+
+data-desc="<b>Use : </b> FOR INCREASED MUSCLE STRENGTH, BREEDING YOUNGSTERS, AND DURING THE MOLTING SEASON
+AMINOVITAE BOOST is very effective product for racing pigeons that contains a concentrate of amino acids. It is ready to use, works fast and is easy to digest.
+It delivers the necessary energy, contributes to a faster absorption of amino acids and also contains vitamin B, which is critical in the maximal absorption of the amino acids.
+It is composed of all essential and many non-essential amino acids coming from high-quality proteins. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 5 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="aminovitae-pro-boost"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/aminovitae-pro-boost.png"
+class="card-img-top"
+alt="aminovitae-pro-boost">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Aminovitae Pro Boost | 1 kg</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="aminovitae-pro-boost"
+
+data-price=""
+
+data-img="images/Products/aminovitae-pro-boost.png"
+
+data-desc="<b>Use : </b> Perfectly tailored to the needs of pigeons and promotes fitness until the day of the flight.
+The prebiotics in the preparation stabilize the intestinal flora and thus improve intestinal health. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 6 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="bcolvit"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/bcolvit.png"
+class="card-img-top"
+alt="bcolvit">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>B-COLVIT | 500 ml</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="bcolvit"
+
+data-price=""
+
+data-img="images/Products/bcolvit.png"
+
+data-desc="<b>Use : </b> For multivitamin nutritional preparation formulated to support the general condition, health, and recovery of pigeons. It provides essential vitamins and nutrients that can be included in a regular pigeon-care program, particularly during periods of training, breeding, recovery, stress, or illness. <br><br> <b>Dosage :</b> Mix 30 ml of B-COLVIT per litre of drinking water, according to the product label.
+Prepare fresh solution daily. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 7 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="betachole"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/betachole.png"
+class="card-img-top"
+alt="betachole">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Betachole | 250 ml</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="betachole"
+
+data-price=""
+
+data-img="images/Products/betachole.png"
+
+data-desc="<b>Use : </b> For a good digestive system and healthy feathers. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 8 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="boostit"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/boostit.png"
+class="card-img-top"
+alt="boostit">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Boost IT | 50 Capsules</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="boostit"
+
+data-price=""
+
+data-img="images/Products/boostit.png"
+
+data-desc="<b>Use : </b> For increase power, stamina, strength, enthusiasm o flying, etc. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 9 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="carepills"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/carepills.png"
+class="card-img-top"
+alt="carepills">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Carepills | 60 Tablets</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="carepills"
+
+data-price=""
+
+data-img="images/Products/carepills.png"
+
+data-desc="<b>Use : </b> For Vitamin A, B-12, D, E, Calcium, Iron and much more. Our formula also includes Amino acids L-Lysine and Methionine for better feather formation and increased egg laying. Use as an excellent addition to your Pigeon’s feed. <br><br> <b>Dosage :</b> Give before daily feeding.
+<br><b>Young pigeons:</b> 1 tablet every 3 days
+<br><b>Adult pigeons:</b> 1 tablet per day ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 10 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="carnilivo-boost"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/carnilivo-boost.png"
+class="card-img-top"
+alt="carnilivo-boost">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Carnilivo Boost | 250 ml</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="carnilivo-boost"
+
+data-price=""
+
+data-img="images/Products/carnilivo-boost.png"
+
+data-desc="<b>Use : </b> For normal metabolism and overall nutritional health. Carnilivo Boost is an easy-to-use liquid supplement for Indian pigeon fanciers looking to maintain their pigeons’ energy, stamina, endurance, recovery and overall condition. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 11 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="cci"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/cci.png"
+class="card-img-top"
+alt="cci">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>CCIE | 50 Tablets</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="cci"
+
+data-price=""
+
+data-img="images/Products/cci.png"
+
+data-desc="<b>Use : </b> For the treatment and prevention of the following diseases:
+<br>– Trichomoniasis (canker)
+<br>– Coccidiosis
+<br>– Hexamitiasis
+<br>– Internal parasites (capillary, ascaris)
+<br>– External parasites (lice, mites, …)
+<br>– Inflammation of the mucous membranes. <br><br> <b>Dosage :</b>
+ 1 tablet per pigeon (400-500 g of body weight) directly in the peak
+<br>– It must be administered before feeding.
+<br>– Drinkers should be removed until 2 hours after treatment
+<br>– Give AMINOVITAE BOOST LIQUID after treatments during 2-3 days ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 12 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="cifral-tz"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/cifral-tz.png"
+class="card-img-top"
+alt="cifral-tz">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>CIFRAL - TZ | 100 gm</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="cifral-tz"
+
+data-price=""
+
+data-img="images/Products/cifral-tz.png"
+
+data-desc="<b>Use : </b> For pigeon lofts, racing pigeons, breeding pigeons and hobby pigeon keepers, Cifral TZ combines its active ingredients with vitamins to support overall health and recovery. Use only according to the product label and veterinary guidance, particularly because it contains antibiotics. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 13 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="coxxi-pro"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/coxxi-pro.png"
+class="card-img-top"
+alt="coxxi-pro">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Coxxi Pro | 100 gm</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="coxxi-pro"
+
+data-price=""
+
+data-img="images/Products/coxxi-pro.png"
+
+data-desc="<b>Use : </b> For bird health management, particularly where veterinary guidance indicates the need for nutritional and therapeutic support against susceptible coccidial and protozoal infections. <br><br> <b>Dosage :</b>
+ This product contains active veterinary ingredients. Use only according to the product label and appropriate veterinary guidance. Do not use antibiotics/antiprotozoals routinely or without proper diagnosis and professional advice. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 14 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="creatine-caremine"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/creatine-caremine.png"
+class="card-img-top"
+alt="creatine-caremine">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Carmine | 200 gm</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="creatine-caremine"
+
+data-price=""
+
+data-img="images/Products/creatine-caremine.png"
+
+data-desc="<b>Use : </b> For Monohydrate health supplement specially presented for pigeon nutrition and conditioning. It is designed for pigeon fanciers looking to include creatine as part of a balanced nutritional and training routine. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 15 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="digest-boost"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/digest-boost.png"
+class="card-img-top"
+alt="digest-boost">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Digestoboost | 500 gm</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="digest-boost"
+
+data-price=""
+
+data-img="images/Products/digest-boost.png"
+
+data-desc="<b>Use : </b> Helps maintain normal digestion and efficient utilization of nutrients from feed.
+<br>– Vitamins, minerals and trace elements help support the nutritional needs of pigeons.
+<br>– Helps maintain good body condition when combined with a balanced diet.
+<br>– Provides nutritional support during breeding and chick-rearing periods.
+<br>– Useful as part of a balanced nutritional routine for active Racer Homer pigeons.
+<br>– Proper nutrition helps maintain healthy feathers and overall body condition.
+<br>– Suitable for pigeons experiencing reduced feed intake or digestive challenges.
+ <br><br> <b>Dosage :</b>
+ Mix with dry feed as directed on the product label. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 16 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="dragees"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/dragees.png"
+class="card-img-top"
+alt="dragees">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Dragees | 60 Tablets</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="dragees"
+
+data-price=""
+
+data-img="images/Products/dragees.png"
+
+data-desc="<b>Use : </b> For supply pigeons with high doses of vitamins, amino acids, honey, and carbohydrates. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 17 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="energy-oil"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/energy-oil.png"
+class="card-img-top"
+alt="energy-oil">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Energy oil | 500 ml</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="energy-oil"
+
+data-price=""
+
+data-img="images/Products/energy-oil.png"
+
+data-desc="Energy oil | 500 ml ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 18 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="enroxy"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/enroxy.png"
+class="card-img-top"
+alt="enroxy">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Enroxy | 100 gm</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="enroxy"
+
+data-price=""
+
+data-img="images/Products/enroxy.png"
+
+data-desc="Enroxy | 100 gm ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 19 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="entrobac-powder"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/entrobac-powder.png"
+class="card-img-top"
+alt="entrobac-powder">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Entrobac Powder | 250 gm</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="entrobac-powder"
+
+data-price=""
+
+data-img="images/Products/entrobac-powder.png"
+
+data-desc="<b> Use : </b> For intestinal stabilization
+<br> Stablee against antibiotic
+<br> Inhibit fungi
+<br> Strengthen the immune system  ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 20 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="eyecure-drop"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/eyecure-drop.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Eyecure Drops | 15 ml</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="eyecure-drop"
+
+data-price=""
+
+data-img="images/Products/eyecure-drop.png"
+
+data-desc="<b> Use : </b> To treat bacterial eye infections and inflammation in birds. 
+<br> <br> <b>Dosage :</b> Use as directed by a qualified veterinarian. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 21 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="ferti-cock"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/ferti-cock.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Ferti Cock | 50 Tablets</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="ferti-cock"
+
+data-price=""
+
+data-img="images/Products/ferti-cock.png"
+
+data-desc="<b> Use : </b>  It is designed to support fertility, reproductive performance and overall body condition during breeding management. <br> <br> <b> Dosage : </b> A full course of treatment consists of 50 tablets to be administered daily according to instructions. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 22 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="ferti-hen"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/ferti-hen.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Ferti Hen | 50 Tablets</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="ferti-hen"
+
+data-price=""
+
+data-img="images/Products/ferti-hen.png"
+
+data-desc="<b> Use : </b>  It is intended to provide nutritional support for fertility and reproductive performance during breeding management. <br> <br> <b> Dosage : </b> A full course of treatment consists of 50 tablets to be administered daily according to instructions. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 23 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="garlic-oil"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/garlic-oil.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Garlic oil | 200 ml</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="garlic-oil"
+
+data-price=""
+
+data-img="images/Products/garlic-oil.png"
+
+data-desc="<b> Use : </b> For enhances condition and stimulates the pigeons’ health. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 24 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="glucoz-plus-powder"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/glucoz-plus-powder.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>GLUCOZE PLUS | 500 gm</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="glucoz-plus-powder"
+
+data-price=""
+
+data-img="images/Products/glucoz-plus-powder.png"
+
+data-desc="<b> Use : </b> Provides quick energy after exhaustion
+<br>-Promotes recovery after a heavy flight
+<br>-Enhances the taste and increases the intake of fluids after administering medication. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 25 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="hand-feeding"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/hand-feeding.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Hand Feeding | 250 gm</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="hand-feeding"
+
+data-price=""
+
+data-img="images/Products/hand-feeding.png"
+
+data-desc="<b> Use : </b> Complete daily nutrition for all ages birds. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 26 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="ideal-pills"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/ideal-pills.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Ideal Pills | 50 Tablets</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="ideal-pills"
+
+data-price=""
+
+data-img="images/Products/ideal-pills.png"
+
+data-desc="<b> Use : </b> For stimulate appetite and support digestion.
+They aid growth in young birds and help weakened pigeons recover their strength after flight or illness.">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 27 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="recover-xt-powder"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/recover-xt-powder.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Recover XT Powder | 500 gm</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="recover-xt-powder"
+
+data-price=""
+
+data-img="images/Products/recover-xt-powder.png"
+
+data-desc="<b> Use : </b> For minimize muscle cell damage, ideally suited for ultra fast recuperation and to enhance the development of muscle cell growth in racing pigeons after returning from training and racing flights. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 28 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="kit1"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/kit1.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>kit 1</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="kit1"
+
+data-price=""
+
+data-img="images/Products/kit1.png"
+
+data-desc="">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 29 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="kit2"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/kit2.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>kit 2</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="kit2"
+
+data-price=""
+
+data-img="images/Products/kit2.png"
+
+data-desc="">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 30 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="pigeoncal"
+data-price="40">
+
+<div class="card h-100 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/pigeoncal.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Pigeoncal Calcium | 250 ml</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="pigeoncal"
+
+data-price=""
+
+data-img="images/Products/pigeoncal.png"
+
+data-desc="<b> Use : </b> Carepills is marketed as a general health supplement for pigeons rather than a medicine for a specific disease.
+<br> <br> <b> Dosage : </b> 3 ml per litre of drinking water daily or 4 drops per 30 ml water, or on food/directly in the mouth as directed by a veterinarian.
+<br>-Shake well before use. Store in a cool, dark place and protect from direct sunlight.">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 31 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="pox-treat-cream"
+data-price="500">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/pox-treat-cream.png"
+class="card-img-top"
+alt="pox-treat-cream">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Pox Treat Cream</h4>
+
+<h5 class="text-primary">₹500</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="pox-treat-cream"
+
+data-price=""
+
+data-img="images/Products/pox-treat-cream.png"
+
+data-desc="<b> Use : </b> Specially formulated external skin cream for pigeon pox sores.">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 32 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="pro-electro"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/pro-electro.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Proelectro Powder | 250 gm</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="pro-electro"
+
+data-price=""
+
+data-img="images/Products/pro-electro.png"
+
+data-desc="<b> Use : </b> For electrolytes with B-vitamins, antioxidants and stress-reducing trace elements.
+<br> <br> <b> Dosage :</b> 1 measure spoon (1/2 teaspoon) per 1 liter of water, when return on race day and the day after.
+In warm periods give half dosage (1/2 teaspoon for 2 liter of water) daily for all pigeons.
+<br>For the racers on warm days, give 2-3 succeeding days until the day before basketing. On the day of basketing we recommend that the pigeons get pure fresh water without any additives. ">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 33 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="rebuild"
+data-price="100">
+
+<div class="card h-100 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/rebuild.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Rebuild | 60 Tablets</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="rebuild"
+
+data-price=""
+
+data-img="images/Products/rebuild.png"
+
+data-desc="<b> Use : </b> Building Muscle Strength and Fast Recuperation.">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 34 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="tylidox-bh-mix"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/tylidox-bh-mix.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Tylidox BH Mix | 100 gm</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="tylidox-bh-mix"
+
+data-price=""
+
+data-img="images/Products/tylidox-bh-mix.png"
+
+data-desc="Tylidox BH Mix | 100 gm">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 35 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="viraclean"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/viraclean.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Viraclean | 200 gm</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="viraclean"
+
+data-price=""
+
+data-img="images/Products/viraclean.png"
+
+data-desc="Viraclean | 200 gm">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- 36 -->
+<div
+class="col-lg-4 col-md-6 product"
+data-name="two-hole-feeder"
+data-price="100">
+
+<div class="card h-80 shadow border-0">
+
+<div class="product-image">
+
+<img
+src="images/Products/two-hole-feeder.png"
+class="card-img-top">
+
+</div>
+
+<div class="card-body">
+
+<center>
+
+<h4>Two Hole Feeder | Water Drinker</h4>
+
+<h5 class="text-primary">₹100</h5>
+
+</center>
+
+<button
+class="btn btn-outline-primary w-100 mt-2 quick-view"
+
+data-name="two-hole-feeder"
+
+data-price=""
+
+data-img="images/Products/two-hole-feeder.png"
+
+data-desc="<b> Use : </b> Two Hole Feeder + Water Drinker.">
+
+Read More
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+            LIGHTBOX
+========================================= -->
+
+<div id="lightbox">
+
+<span id="close">
+
+&times;
+
+</span>
+
+<img id="lightbox-img">
+
+</div>
+
+<!-- =========================================
+            Read More MODAL
+========================================= -->
+
+<div
+class="modal fade"
+id="quickModal"
+tabindex="-1">
+
+<div class="modal-dialog modal-lg">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h4 id="modalTitle">
+
+Product
+
+</h4>
+
+<button
+class="btn-close"
+data-bs-dismiss="modal">
+
+</button>
+
+</div>
+
+<div class="modal-body">
+
+<div class="row">
+
+<div class="col-md-6">
+
+<img
+id="modalImage"
+class="img-fluid rounded">
+
+</div>
+
+<div class="col-md-6">
+
+<h3 id="modalPrice"></h3>
+
+<p id="modalDesc"></p>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =========================================
+            WHATSAPP BUTTON
+========================================= -->
+
+<a
+
+href="https://wa.me/917016909435?text=Hello%20I%20want%20to%20order%20suppliments"
+
+class="whatsapp-float"
+
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- =========================================
+            BACK TO TOP
+========================================= -->
+
+<button id="topBtn">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- =========================================
+            FOOTER
+========================================= -->
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="row gy-4">
+
+<div class="col-lg-4">
+
+<h3>
+
+<i class="fas fa-dove"></i>
+
+Sagrampura Pigeon
+
+</h3>
+
+<p>
+
+Premium pigeon supplements for breeding and healthy birds.
+
+</p>
+
+</div>
+
+<div class="col-lg-2">
+
+<h5>
+
+Quick Links
+
+</h5>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-3">
+
+<h5>
+
+Contact
+
+</h5>
+
+<p>
+
+<i class="fas fa-phone"></i>
+
++91 7016909435
+
+</p>
+
+<p>
+
+<i class="fas fa-envelope"></i>
+
+sonihassan98@gmail.com
+
+</p>
+
+<p>
+
+<i class="fas fa-location-dot"></i>
+
+Surat, Gujarat
+
+</p>
+
+</div>
+
+<div class="col-lg-3">
+
+<h5>
+
+Follow Us
+
+</h5>
+
+<div class="social">
+
+<a href="https://www.instagram.com/surat_sagrampura_pigeons/"><i class="fab fa-instagram"></i></a>
+
+<a href="https://www.youtube.com/@SagrampuraPigeons"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+<h5 class="mt-4">
+
+Payments
+
+</h5>
+
+<i class="fab fa-google-pay payment"></i>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="text-center">
+
+© 2026 Sagrampura Pigeon. All Rights Reserved.
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
